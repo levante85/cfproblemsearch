@@ -59,7 +59,7 @@ func main() {
 				fmt.Fprintf(stdin, "|%-4d%-2s|%-50s|%+v\n", p.ContestID, p.Index, p.Name, p.Tags)
 			}
 		} else {
-			fmt.Println("Something went wrong request failed...")
+			fmt.Fprintf(stdin, "%v\n", "Something went wrong request failed...")
 		}
 
 		wg.Done()
